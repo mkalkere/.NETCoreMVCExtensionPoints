@@ -4,15 +4,15 @@
     <banner title="Auto Insurance"
             sub-title="With accident forgiveness and the lowest rates around, your checking account is as safe as you."
             background-color="green"></banner>
-
 }
 
 @section SideNav {
     @Html.Partial("LeftNav")
+    @await Component.InvokeAsync("MortgageRates")
 }
 
 <p>After you complete this form you should receive an email with your quote shortly after. Please allow up to 1 hour to receive your quote.</p>
-    <hr class="featurette-divider-thin">
+<hr class="featurette-divider-thin">
 <form asp-controller="Auto" asp-action="Index">
     <div class="form-group">
         <label asp-for="Make">Vehicle Make</label>
