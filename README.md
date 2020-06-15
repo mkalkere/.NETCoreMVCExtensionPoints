@@ -52,5 +52,5 @@ Tag Helpers and View Components both support DI and MVC Context
 
 - Custom Model Binders can be used to handle difficult or incomplete data
 
-- 
+
 
