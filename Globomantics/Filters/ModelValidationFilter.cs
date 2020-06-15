@@ -11,14 +11,14 @@ namespace Globomantics.Filters
     {
         public void OnActionExecuted(ActionExecutedContext context)
         {
-            //Don't need this.
+            // Don't need this
         }
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
-            if(!context.ModelState.IsValid)
+            if (!context.ModelState.IsValid)
             {
-                context.Result = new ViewResult
+                context.Result = new ViewResult()
                 {
                     ViewData = ((Controller)context.Controller).ViewData,
                     TempData = ((Controller)context.Controller).TempData,

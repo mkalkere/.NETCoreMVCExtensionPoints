@@ -10,7 +10,7 @@ namespace Globomantics.Filters
 {
     public class FeatureAuthFilter : IAuthorizationFilter
     {
-        private readonly IFeatureService featureService;
+        private IFeatureService featureService;
         private string featureName;
 
         public FeatureAuthFilter(IFeatureService featureService, string featureName)

@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Globomantics.Controllers
 {
+    
     public class AutoController : Controller
     {
         private ILogger<AutoController> logger;

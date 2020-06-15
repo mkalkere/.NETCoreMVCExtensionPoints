@@ -6,13 +6,13 @@ namespace Globomantics.Services
 {
     public interface IRateService
     {
-        List<Rate> GetAutoLoanRates();
-
         List<Rate> GetMortgageRates();
 
         List<Rate> GetCreditCardRates();
 
         List<CDRate> GetCDRates();
+
+        List<Rate> GetAutoLoanRates();
 
         double GetCDRateByTerm(CDTermLength term);
     }

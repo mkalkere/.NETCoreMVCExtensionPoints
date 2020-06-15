@@ -30,13 +30,13 @@ namespace Globomantics.Controllers
 
         [HttpGet]
         [Route("autoloan")]
-        public IActionResult GetAutoLoans()
+        public IActionResult GetAutoLoanRates()
         {
             return Ok(rateService.GetAutoLoanRates());
         }
 
         [HttpGet]
-        [Route("credit")]
+        [Route("creditcard")]
         public IActionResult GetCreditCardRates()
         {
             return Ok(rateService.GetCreditCardRates());

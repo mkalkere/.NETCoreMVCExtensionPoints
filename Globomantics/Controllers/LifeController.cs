@@ -29,8 +29,16 @@ namespace Globomantics.Controllers
         [HttpPost]
         public IActionResult Quote(LifeQuote quote)
         {
-            quoteService.GenerateLifeQuote(quote);
-            return RedirectToAction("Insurance", "Confirmation");
+            if (ModelState.IsValid)
+            {
+                quoteService.GenerateLifeQuote(quote);
+                return RedirectToAction("Insurance", "Confirmation");
+            }
+            else
+            {
+                logger.LogInformation("Bad model", quote);
+                return View(quote);
+            }
         }
     }
 }

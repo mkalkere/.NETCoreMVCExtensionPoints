@@ -36,3 +36,21 @@ Tag Helpers and View Components both support DI and MVC Context
 
 - Type and Service Filters enable Dependency Injection
 
+### 5. Enhancing Data Binding and Validation
+
+- Model Validation maintains the integrity of incoming request data
+
+- Validation Attributes can be used to customize property validation
+
+- IValidatableObject can be used to implement custom Model level validation
+
+- Model Binding Providers determine which Binder should be used for a request
+
+- Value Providers supply the Binder with data
+
+- Input Formatters serilize  request body data
+
+- Custom Model Binders can be used to handle difficult or incomplete data
+
+- 
+

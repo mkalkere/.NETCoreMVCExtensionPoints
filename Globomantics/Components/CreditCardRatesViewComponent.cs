@@ -30,5 +30,4 @@ namespace Globomantics.Components
             return View(ratesVM);
         }
     }
-    
 }
