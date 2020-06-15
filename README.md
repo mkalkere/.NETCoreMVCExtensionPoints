@@ -20,3 +20,19 @@ View Components
 
 Tag Helpers and View Components both support DI and MVC Context
 
+### 4. Controlling Application flow with Filters
+
+- Filters inject logic into the MVC Pipeline
+
+- Action filters run logic before and after Action Methods
+
+- Result Filters similarly run logic before and after Action Results
+
+- Exception Filters can intercept the exceptions in the scope of MVC
+
+- Authorization Filters run first and validate incoming requests
+
+- Resource filters wrap the MVC Life Cycle
+
+- Type and Service Filters enable Dependency Injection
+

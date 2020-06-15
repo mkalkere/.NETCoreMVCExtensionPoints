@@ -10,26 +10,25 @@ namespace Globomantics.Components
 {
     public class CreditCardRatesViewComponent : ViewComponent
     {
-        private readonly IRateService rateService;
+        private IRateService rateService;
 
         public CreditCardRatesViewComponent(IRateService rateService)
         {
             this.rateService = rateService;
         }
 
-        public async Task<IViewComponentResult> InvokeAsyc(
-            string title, string subTitle)
+        public async Task<IViewComponentResult> InvokeAsync(
+            string title, string subtitle)
         {
             var ratesVM = new CreditCardWidgetVM()
             {
                 Rates = rateService.GetCreditCardRates(),
                 WidgetTitle = title,
-                WidgetSubTitle = subTitle
+                WidgetSubTitle = subtitle
             };
 
             return View(ratesVM);
         }
-        
     }
-
+    
 }

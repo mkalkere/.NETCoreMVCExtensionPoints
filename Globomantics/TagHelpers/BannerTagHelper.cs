@@ -9,7 +9,6 @@ namespace Globomantics.TagHelpers
     [HtmlTargetElement("banner")]
     public class BannerTagHelper : TagHelper
     {
-
         public string Title { get; set; }
 
         public string SubTitle { get; set; }

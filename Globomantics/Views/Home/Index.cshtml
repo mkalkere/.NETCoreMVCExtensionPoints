@@ -7,22 +7,19 @@
         <div class="col-md-4">
             <h3>CD Rates</h3>
             <p class="lead">The Longer you Save, the More You Earn</p>
-
             <cdrate title="12 Month CD" term-length="Months12" meter-percent="50"></cdrate>
             <cdrate title="18 Month CD" term-length="Months18" meter-percent="75"></cdrate>
             <cdrate title="24 Month CD" term-length="Months24" meter-percent="100"></cdrate>
         </div>
         <div class="col-md-4">
-            @await Component.InvokeAsync("MortgageRates")
+            @await  Component.InvokeAsync("MortgageRates")
         </div>
         <div class="col-md-4">
-            @await Component.InvokeAsync(
-                "CreditCardRates",
-                new
-                {
-                    title = "Credit Card Rates",
-                    subtitle ="The best rates around."
-                })
+            @await  Component.InvokeAsync("CreditCardRates",
+               new {
+                   title = "Credit Card Rates",
+                   subtitle = "The best rates around."
+               })
         </div>
     </div>
 

@@ -2,11 +2,11 @@
 
 <div class="card">
     <div class="card-body">
-        <h3 class="card-title">Credit Card Rates</h3>
-        <p class="card-text">The lowest rates - guaranteed.</p>
+        <h3 class="card-title">@Model.WidgetTitle</h3>
+        <p class="card-text">@Model.WidgetSubTitle</p>
     </div>
     <ul class="list-group list-group-flush">
-        @foreach (var creditRate in Model.CreditCardRates)
+        @foreach (var creditRate in Model.Rates)
         {
             <li class="list-group-item">@creditRate.Title: @creditRate.Value%</li>
         }

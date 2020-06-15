@@ -1,6 +1,5 @@
 ﻿using Globomantics.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +9,7 @@ namespace Globomantics.Components
 {
     public class MortgageRatesViewComponent : ViewComponent
     {
-        private readonly IRateService rateService;
+        private IRateService rateService;
 
         public MortgageRatesViewComponent(IRateService rateService)
         {
