@@ -20,7 +20,7 @@ View Components
 
 Tag Helpers and View Components both support DI and MVC Context
 
-### 4. Controlling Application flow with Filters
+### 4. Controlling Application Flow with Filters
 
 - Filters inject logic into the MVC Pipeline
 
