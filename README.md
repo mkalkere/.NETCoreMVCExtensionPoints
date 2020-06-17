@@ -52,5 +52,15 @@ Tag Helpers and View Components both support DI and MVC Context
 
 - Custom Model Binders can be used to handle difficult or incomplete data
 
+### Customizing Application Responses
 
+- View Engines are responsible for locating and rendering View
+
+- View Location Expanders can be used to extend the Razor search templates
+
+- Action Results are responsible for generating an HTTP Response
+
+- Custom Action Results implement the IActionResult interface
+
+- Action Results often delegate writing response data to other components
 

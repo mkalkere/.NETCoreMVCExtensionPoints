@@ -11,6 +11,7 @@ namespace Globomantics.Controllers
     {
         public IActionResult Submission(List<Submission> submissions)
         {
+            // TODO: Save submissions
             return View();
         }
     }

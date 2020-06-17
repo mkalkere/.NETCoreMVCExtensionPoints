@@ -32,6 +32,7 @@ namespace Globomantics.Controllers
         public IActionResult Application(LoanDetails app)
         {
             loanService.CreateLoanApplication(app, Guid.NewGuid().ToString());
+
             return RedirectToAction("Employment");
         }
 
